@@ -1,0 +1,28 @@
+.button {
+  background-color: var(--primary-light);
+  padding: 8px 16px;
+  border-radius: var(--radius);
+  font-size: 16px;
+  font-weight: bold;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.button:hover {
+  background-color: var(--primary-dark);
+}
+
+.loading {
+  position: absolute;
+  inset: 0;
+  background-color: var(--primary-dark);
+  border-radius: var(--radius);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

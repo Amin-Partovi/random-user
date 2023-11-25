@@ -18,6 +18,8 @@ code {
   --border: rgb(209, 209, 209);
   --radius: 8px;
   --darkest: black;
+  --primary-light: rgb(205, 245, 131);
+  --primary-dark: rgb(147, 185, 76);
 }
 
 html,
@@ -27,7 +29,3 @@ body,
   color: var(--foreground);
   background-color: var(--background);
 }
-
-
-
-
