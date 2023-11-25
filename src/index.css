@@ -15,7 +15,7 @@ code {
 :root {
   --background: rgb(31, 32, 37);
   --foreground: rgb(231, 231, 231);
-  --border: rgb(209, 209, 209);
+  --border: rgba(209, 209, 209, 0.5);
   --radius: 8px;
   --darkest: black;
   --primary-light: rgb(205, 245, 131);

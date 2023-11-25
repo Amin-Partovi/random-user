@@ -1,0 +1,6 @@
+.card {
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 36px;
+  width: fit-content;
+}
