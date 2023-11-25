@@ -8,4 +8,17 @@
 
 .user-img {
   border-radius: var(--radius);
+  position: relative;
+}
+
+.highlight {
+  color: var(--lightest);
+  background: var(--background);
+  text-shadow: var(--lightest) 0px 0px 5px, var(--lightest) 0px 0px 10px,
+    var(--foreground) 0px 0px 15px, var(--primary-light) 0px 0px 20px,
+    var(--primary-light) 0px 0px 30px, var(--primary-dark) 0px 0px 40px;
+}
+
+.img-highlight {
+  box-shadow: var(--primary-light) 0px 0px 10px;
 }

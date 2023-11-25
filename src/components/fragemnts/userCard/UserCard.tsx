@@ -1,6 +1,7 @@
 import { Card } from "components/elements";
 import { RandomUserData } from "types";
 import styles from "./user-card.module.css";
+import useHighlightField from "./useHighlightField";
 
 const UserCard = ({ user }: { user: RandomUserData }) => {
   const {
@@ -9,20 +10,30 @@ const UserCard = ({ user }: { user: RandomUserData }) => {
     location: { country },
   } = user;
 
+  const highlight = useHighlightField(user);
+
   return (
     <Card>
       <div className={styles["card-header"]}>
         <h2>
-          {first} {last}
+          <span className={highlight.first ? styles.highlight : ""}>
+            {first}
+          </span>{" "}
+          <span className={highlight.last ? styles.highlight : ""}>{last}</span>
         </h2>
-        <span>{country}</span>
+
+        <span className={highlight.country ? styles.highlight : ""}>
+          {country}
+        </span>
       </div>
       <img
         src={largeImg}
         alt={`${first} ${last}`}
         width={300}
         height={300}
-        className={styles["user-img"]}
+        className={`${styles["user-img"]} ${
+          highlight.largeImg ? styles["img-highlight"] : ""
+        }`}
       />
     </Card>
   );

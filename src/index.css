@@ -21,6 +21,7 @@ code {
   --darkest: black;
   --primary-light: rgb(205, 245, 131);
   --primary-dark: rgb(147, 185, 76);
+  --lightest: white;
 }
 
 html,
