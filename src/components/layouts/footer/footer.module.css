@@ -1,0 +1,10 @@
+.footer {
+  background-color: var(--darkest);
+}
+
+.footer-content {
+  display: flex;
+  justify-content: flex-end;
+  gap: 20px;
+  padding: 16px 0;
+}

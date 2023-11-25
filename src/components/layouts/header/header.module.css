@@ -1,0 +1,7 @@
+.header {
+  background-color: var(--darkest);
+}
+
+.header-content {
+  padding: 24px 0;
+}
