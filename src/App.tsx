@@ -1,12 +1,10 @@
-import { Button } from "components/elements";
 import { PageLayout } from "components/layouts";
-import { useFetchRandomUser } from "hooks";
+import { Home } from "components/pages";
 
 function App() {
-  const { refetch, data, isLoading } = useFetchRandomUser();
   return (
     <PageLayout>
-      <Button> watch me</Button>
+      <Home />
     </PageLayout>
   );
 }

@@ -19,7 +19,13 @@ const ExternalLinks = (): React.ReactElement => {
   return (
     <>
       {links.map(({ href, icon, label }) => (
-        <a href={href} target="_blank" rel="noreferrer" aria-label={label}>
+        <a
+          href={href}
+          target="_blank"
+          rel="noreferrer"
+          aria-label={label}
+          key={label}
+        >
           {icon}
         </a>
       ))}
