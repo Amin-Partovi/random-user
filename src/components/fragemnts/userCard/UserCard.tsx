@@ -18,7 +18,8 @@ const UserCard = ({ user }: { user: RandomUserData }) => {
         <h2>
           <span className={highlight.first ? styles.highlight : ""}>
             {first}
-          </span>{" "}
+          </span>
+          &nbsp;
           <span className={highlight.last ? styles.highlight : ""}>{last}</span>
         </h2>
 
@@ -26,15 +27,18 @@ const UserCard = ({ user }: { user: RandomUserData }) => {
           {country}
         </span>
       </div>
-      <img
-        src={largeImg}
-        alt={`${first} ${last}`}
-        width={300}
-        height={300}
-        className={`${styles["user-img"]} ${
-          highlight.largeImg ? styles["img-highlight"] : ""
-        }`}
-      />
+
+      <div className={styles["card-content"]}>
+        <img
+          src={largeImg}
+          alt={`${first} ${last}`}
+          width={300}
+          height={300}
+          className={`${styles["user-img"]} ${
+            highlight.largeImg ? styles["img-highlight"] : ""
+          }`}
+        />
+      </div>
     </Card>
   );
 };

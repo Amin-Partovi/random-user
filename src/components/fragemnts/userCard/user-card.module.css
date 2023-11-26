@@ -6,9 +6,16 @@
   margin-bottom: 16px;
 }
 
+.card-content{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
 .user-img {
   border-radius: var(--radius);
   position: relative;
+  
 }
 
 .highlight {
