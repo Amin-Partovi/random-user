@@ -5,12 +5,12 @@ import { EXTERNAL_LINKS } from "consts";
 const links = [
   {
     label: "link to linkedin profile",
-    icon: <LinkedinIcon color="white" size={25} />,
+    icon: <LinkedinIcon color="#D1D1D1" size={25} />,
     href: EXTERNAL_LINKS.LINKEDIN,
   },
   {
     label: "link to github profile",
-    icon: <GithubIcon color="white" size={25} />,
+    icon: <GithubIcon color="#D1D1D1" size={25} />,
     href: EXTERNAL_LINKS.GITHUB,
   },
 ];

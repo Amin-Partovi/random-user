@@ -1,5 +1,5 @@
-import { TEXTS } from "consts";
 import Container from "../container/Container";
+import Logo from "assets/images/logo.png";
 
 import styles from "./header.module.css";
 
@@ -8,7 +8,7 @@ const Header = (): React.ReactElement => {
     <header className={styles.header}>
       <Container>
         <div className={styles["header-content"]}>
-          <h1>{TEXTS.RANDOM_USER}</h1>
+          <img src={Logo} alt="news hub logo" width={150} />
         </div>
       </Container>
     </header>
